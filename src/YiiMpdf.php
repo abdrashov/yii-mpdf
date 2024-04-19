@@ -37,9 +37,11 @@ class YiiMpdf
             'margin_bottom' => $this->getConfig('margin_bottom'),
             'margin_header' => $this->getConfig('margin_header'),
             'margin_footer' => $this->getConfig('margin_footer'),
+
             'fontDir' => array_merge($fontDirs, [
                 $this->getConfig('custom_font_dir')
             ]),
+
             'fontdata' => array_merge($fontData, $this->getConfig('custom_font_data')),
             'autoScriptToLang' => $this->getConfig('auto_language_detection'),
             'autoLangToFont' => $this->getConfig('auto_language_detection'),
